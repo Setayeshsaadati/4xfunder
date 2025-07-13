@@ -1,6 +1,12 @@
 "use client";
 
-import { Grid, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Divider,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import FunderInfo from "./FunderInfo";
 import QuickAccess from "./QuickAccess";
 import Links from "./Links";
@@ -19,28 +25,41 @@ const MainFooter = () => {
       px={isSmall ? 2 : 8}
       pt={10}
       pb={5}
-      bgcolor="#1a1b22"
       justifyContent="center"
     >
-      <Grid size={{ xs: 12, md: 4 ,sm: 6  }}>
-        <FunderInfo />
-      </Grid>
+      <Grid
+        container
+        borderBottom={1}
+        borderColor={"rgba(255, 255, 255, 0.11)"}
+      >
+        <Grid size={{ xs: 12, md: 4, sm: 6 }} mb={3}>
+          <FunderInfo />
+        </Grid>
 
-      <Grid  size={{ xs: 6, md: 2 ,sm: 3  }}>
-        <QuickAccess />
-      </Grid>
+        <Grid size={{ xs: 6, md: 2, sm: 3 }}>
+          <QuickAccess />
+        </Grid>
 
-      <Grid size={{ xs:6, md: 2 ,sm: 3 }}>
-        <Links />
-      </Grid>
+        <Grid size={{ xs: 6, md: 2, sm: 3 }}>
+          <Links />
+        </Grid>
 
-      <Grid size={{ xs: 12, md: 3 ,sm: 3}} >
-        <Symbols />
-      </Grid>
+        <Grid size={{ xs: 12, md: 3, sm: 3 }}>
+          <Symbols />
+        </Grid>
 
-      <Grid size={{ xs: 12, md: .5 ,sm: 3 }} mt={4} display="flex" justifyContent="center">
-        <ScrollToTopButton />
+        <Grid
+          size={{ xs: 12, md: 0.5, sm: 3 }}
+          mt={4}
+          display="flex"
+          justifyContent="center"
+        >
+          <ScrollToTopButton />
+        </Grid>
       </Grid>
+      <Typography fontSize={14}>
+        2024 © | کلیه حقوق برای فورایکس فاندر محفوظ می باشد.
+      </Typography>
     </Grid>
   );
 };

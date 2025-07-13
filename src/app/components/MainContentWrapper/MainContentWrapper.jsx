@@ -5,9 +5,9 @@ const MainContentWrapper = ({ children }) => {
     <Box
       sx={{
         flexGrow: 1,
-        width: "95%",
+        width: "100%",
         maxWidth: {
-          xs: "95%",
+          xs: "100%",
           sm: "600px",
           md: "900px",
           lg: "1200px",

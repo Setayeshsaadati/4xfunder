@@ -23,7 +23,6 @@ body,
 
 body {
   background-color: #0C0D17 !important;
-  max-height: 100vh;
   overflow-y: auto;
 }
 
@@ -47,6 +46,6 @@ input[type="number"] {
 .MuiMenuItem-root,
 .MuiListItem-root {
   font-family: "Peyda", "Roboto", sans-serif !important;
-  direction: rtl !important;
-  text-align: right !important;
+  direction: rtl;
+  text-align: right ;
 }
