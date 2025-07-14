@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 
-const MainContentWrapper = ({ children }) => {
+const ContentWrapper = ({ children }) => {
   return (
     <Box
       sx={{
@@ -14,11 +14,10 @@ const MainContentWrapper = ({ children }) => {
             xs: "90%",
             sm: "800px",
             md: "850px",
-            lg: "1200px",
+            lg: "79%",
           },
           mx: "auto",
           boxSizing: "border-box",
-          minHeight: "calc(100vh - 80px)",
         }}
       >
         {children}
@@ -27,4 +26,4 @@ const MainContentWrapper = ({ children }) => {
   );
 };
 
-export default MainContentWrapper;
+export default ContentWrapper;

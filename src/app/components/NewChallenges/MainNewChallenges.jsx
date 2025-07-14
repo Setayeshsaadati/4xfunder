@@ -17,20 +17,32 @@ const MainNewChallenges = () => {
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 
+  const getPhoneImageWidth = () => {
+    if (isSmall) return 300;
+    if (isMedium) return 500;
+    return 650;
+  };
+
+  const getPhoneImageHeight = () => {
+    if (isSmall) return 200;
+    if (isMedium) return 380;
+    return 600;
+  };
+
   return (
     <Grid
       my={{ xs: 0, sm: 0, md: 10 }}
-      height={isSmall ? "100vh" : "40vh"}
+      height={isSmall ? "100vh" : "45vh"}
       container
       bgcolor="#272935"
       px={{ xs: 2, sm: 4, md: 10 }}
-      py={{ xs: 3, sm: 5, md: 2 }}
+      py={{ xs: 3, sm: 5, md: 0 }}
       spacing={2}
       alignItems="center"
       justifyContent="space-between"
       direction={{ xs: "column", md: "row" }}
     >
-      <Grid size={{ xs: 12, md: 6 }} mt={{ xs: 0, sm: 0, md: -7 }}>
+      <Grid item xs={12} md={6} mt={{ xs: 0, sm: 0, md: -12 }} pr={{ xs: 0, md: 10 }}>
         <Box display="flex" alignItems="center" mb={2}>
           <Icon icon="streamline-sharp:star-2-solid" width="28" height="28" />
           <Typography
@@ -98,14 +110,12 @@ const MainNewChallenges = () => {
         </Box>
       </Grid>
 
-      <Grid size={{ xs: 12, md: 5 }}
-        textAlign="center"
-      >
+      <Grid item xs={12} md={5} textAlign="center" mt={{ xs: 0, md: -8 }}>
         <Image
           src="/Photos/phone.png"
           alt="Phone"
-          width={isSmall ? 300 : isMedium ? 900 : 8000}
-          height={isSmall ? 200 : isMedium ? 380 : 600}
+          width={getPhoneImageWidth()}
+          height={getPhoneImageHeight()}
           style={{ maxWidth: "100%", height: "auto" }}
         />
       </Grid>

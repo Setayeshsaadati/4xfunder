@@ -15,7 +15,6 @@ const MainDisclaimer = () => {
       direction="column"
       px={isSmall ? 3 : 0}
       mt={20}
-      mb={15}
     >
       <Typography
         fontSize={isSmall ? 22 : 30}

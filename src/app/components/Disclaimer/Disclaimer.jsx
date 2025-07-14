@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   Box,
   Button,
@@ -23,6 +23,14 @@ const Disclaimer = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const contentRef = useRef(null);
+  const [contentHeight, setContentHeight] = useState(0);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      setContentHeight(contentRef.current.scrollHeight);
+    }
+  }, [isExpanded]);
 
   const lines = disclaimerText
     .split("\n")
@@ -42,43 +50,52 @@ const Disclaimer = () => {
         mt: 4,
       }}
     >
-      <Typography
-        variant="body1"
-        color="white"
+      <Box
         sx={{
-          textAlign: "left",
-          direction: "ltr",
-          whiteSpace: "pre-wrap",
-          transition: "all 0.4s ease",
-          lineHeight: 1.7,
+          overflow: "hidden",
+          height: isExpanded ? `${contentHeight}px` : `${contentHeight / 2}px`,
+          transition: "height 0.5s ease",
         }}
       >
-        {isExpanded ? (
-          disclaimerText
-        ) : (
-          <>
-            <span>{lines[0]}</span>
-            <br />
-            <span
-              style={{
-                filter: "blur(1px)",
-                opacity: 0.8,
-              }}
-            >
-              {lines[1]}
-            </span>
-            <br />
-            <span
-              style={{
-                filter: "blur(3px)",
-                opacity: 0.5,
-              }}
-            >
-              {lines[2]}...
-            </span>
-          </>
-        )}
-      </Typography>
+        <Typography
+          ref={contentRef}
+          variant="body1"
+          color="white"
+          sx={{
+            textAlign: "left",
+            direction: "ltr",
+            whiteSpace: "pre-wrap",
+            lineHeight: 1.7,
+            transition: "all 0.4s ease",
+          }}
+        >
+          {isExpanded ? (
+            disclaimerText
+          ) : (
+            <>
+              <span>{lines[0]}</span>
+              <br />
+              <span
+                style={{
+                  filter: "blur(1px)",
+                  opacity: 0.8,
+                }}
+              >
+                {lines[1]}
+              </span>
+              <br />
+              <span
+                style={{
+                  filter: "blur(3px)",
+                  opacity: 0.5,
+                }}
+              >
+                {lines[2]}...
+              </span>
+            </>
+          )}
+        </Typography>
+      </Box>
 
       <Button
         onClick={handleToggle}

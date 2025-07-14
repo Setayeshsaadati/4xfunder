@@ -1,4 +1,4 @@
-import MainContentWrapper from "./components/MainContentWrapper/MainContentWrapper";
+// app/layout.jsx
 import "./globals.css";
 import { Box } from "@mui/material";
 
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="fa" dir="rtl">
       <body>
         <Box>
-          <MainContentWrapper>{children}</MainContentWrapper>
+          {children}
         </Box>
       </body>
     </html>

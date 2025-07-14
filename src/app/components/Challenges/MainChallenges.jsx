@@ -13,8 +13,8 @@ const MainChallenges = () => {
 
   return (
     <Grid
-      height={isSmall ? "280vh" : "120vh"}
-      mb={isSmall ? 30 : isMedium ? 80 : isLarge ? 20 : 30}
+      height={isSmall ? "auto" : "120vh"}
+      mb={isSmall ? 10 : isMedium ? 80 : isLarge ? 20 : 30}
     >
       <ChallengesHeader />
     </Grid>

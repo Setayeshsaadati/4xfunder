@@ -44,7 +44,7 @@ const MainNav = () => {
           justifyContent: { xs: "flex-start", md: "center" },
           alignItems: "center",
           gap: { xs: 2, md: 3 },
-          direction: "rtl", 
+          direction: "rtl",
           "&::-webkit-scrollbar": { display: "none" },
           scrollbarWidth: "none",
         }}

@@ -9,7 +9,7 @@
 html {
   direction: rtl;
   text-align: right;
-  overflow-x: none;
+  overflow-x: auto;
   color-scheme: dark;
 }
 

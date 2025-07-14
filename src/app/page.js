@@ -1,35 +1,54 @@
-import { Box, Grid } from "@mui/material";
-import MainHeader from "./components/Hedear/MainHeader";
-import Start from "./components/Start/Start";
-import MainFeatures from "./components/Features/MainFeatures";
-import MainWhy4x from "./components/Why4xFunder/MainWhy4x";
-import Main5Steps from "./components/5Steps/MainFSteps";
-import MainChallenges from "./components/Challenges/MainChallenges";
-import SlideShow from "./components/Slides/SlideShow";
+// app/page.jsx
+import { Box } from "@mui/material";
+
 import BlogSection from "./components/Blog/BlogSection";
 import MainTraderx from "./components/Traderx/MainTraderx";
 import MainUserComments from "./components/UserComments/MainUserComments";
 import MainNewChallenges from "./components/NewChallenges/MainNewChallenges";
 import MainDisclaimer from "./components/Disclaimer/MainDisclaimer";
 import MainFooter from "./components/Footer/MainFooter";
+import Start from "./components/Start/Start";
+import MainFeatures from "./components/Features/MainFeatures";
+import MainWhy4x from "./components/Why4xFunder/MainWhy4x";
+import MainChallenges from "./components/Challenges/MainChallenges";
+import SlideShadow from "./components/Slides/SlideShow";
+import MainHeader from "./components/Hedear/MainHeader";
+import MainFSteps from "./components/5Steps/MainFSteps";
+import ContentWrapper from "./components/MainContentWrapper/ContentWrapper";
+import FullWidthWrapper from "./components/MainContentWrapper/FullWidthWrapper";
 
 const page = () => {
   return (
-    <Grid width={"100%"}>
-      <MainHeader />
-      <Start />
-      <MainFeatures />
-      <MainWhy4x />
-      <Main5Steps />
-      <MainChallenges />
-      <SlideShow />
-      <BlogSection />
+    <Box width="100%">
+      <ContentWrapper>
+        <MainHeader />
+        <Start />
+        <MainFeatures />
+        <MainWhy4x />
+        <MainFSteps />
+        <MainChallenges />
+        <SlideShadow />
+        <BlogSection />
+      </ContentWrapper>
+
+      <FullWidthWrapper>
         <MainTraderx />
-      <MainUserComments />
-      <MainNewChallenges />
-      <MainDisclaimer />
+      </FullWidthWrapper>
+
+      <ContentWrapper>
+        <MainUserComments />
+      </ContentWrapper>
+
+      <FullWidthWrapper>
+        <MainNewChallenges />
+      </FullWidthWrapper>
+
+      <ContentWrapper>
+        <MainDisclaimer />
+      </ContentWrapper>
+
       <MainFooter />
-    </Grid>
+    </Box>
   );
 };
 
