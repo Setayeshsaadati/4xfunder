@@ -16,18 +16,19 @@ const Traderx = () => {
           lg: 10,
           xl: 12,
         },
-        py: { xs: 6, sm: 8, md: 5 },
+        py: { xs: 6, sm: 8, md: 3 },
         pb: { xs: 6, sm: 8, md: 15 },
       }}
     >
       <Grid
         container
-        spacing={4}
+        spacing={1}
         alignItems="center"
         justifyContent="space-between"
         flexDirection={{ xs: "column", md: "row" }}
+        width={{ md: 600}}
       >
-        <Grid item xs={12} md={6}>
+        <Grid width={'70%'}>
           <Box
             width="fit-content"
             display="flex"

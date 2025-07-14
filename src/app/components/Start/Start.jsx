@@ -4,7 +4,6 @@ import { Icon } from "@iconify/react";
 import {
   Box,
   Button,
-  Grid,
   Typography,
   useTheme,
   useMediaQuery,
@@ -16,28 +15,30 @@ const Start = () => {
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"));
 
-  const getLeftImageWidth = () => {
-    if (isSmall) return 100;
-    if (isMedium) return 150;
-    return 200;
-  };
-
   const getRightImageWidth = () => {
     if (isSmall) return 60;
     if (isMedium) return 120;
     return 200;
   };
-  const getLeftImageHight = () => {
-    if (isSmall) return 100;
-    if (isMedium) return 150;
-    return 200;
-  };
+  
 
   const getRightImageHight = () => {
     if (isSmall) return 60;
-    if (isMedium) return 120;
+    if (isMedium) return 80;
     return 200;
   };
+
+  const getLeftImageHight = () => {
+    if (isSmall) return 130;
+    if (isMedium) return 120;
+    return 220;
+  };
+
+  const getLeftImageWidth = () => {
+    if (isSmall) return 80;
+    if (isMedium) return 180;
+    return 170;
+  }; 
 
   return (
     <Box
@@ -122,7 +123,7 @@ const Start = () => {
       <Box
         sx={{
           position: "absolute",
-          top: {xs: -20 , md: 0},
+          top: {xs: -20 , md: -40 ,lg: 20},
           width: "80%",
           display: "flex",
           justifyContent: "space-between",
@@ -133,14 +134,14 @@ const Start = () => {
       >
         <Image
           src="/Photos/bggoldcoin.png"
-          width={getLeftImageHight()}
-          height={getLeftImageHight()}
+          width={getRightImageWidth()}
+          height={getRightImageHight()}
           alt="gold coin"
         />
         <Image
           src="/Photos/bgblackcoin.png"
-          height={getRightImageHight()}
-          width={getRightImageWidth()}
+          height={getLeftImageHight()}
+          width={getLeftImageWidth()}
           alt="black coin"
         />
       </Box>

@@ -13,8 +13,8 @@ const MainTraderx = () => {
 
   return (
     <Grid
-      height={isSmall ? 900 : isMedium ? (80 ? isLarge : 250) : 420}
-      sx={{ width: "auto" }}
+      height={isSmall ? 900 : isMedium ? (80 ? isLarge : 250) : 380}
+      // sx={{ width: "20vh" }}
       bgcolor={"#272935"}
       container
       my={15}

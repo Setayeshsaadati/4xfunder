@@ -15,7 +15,7 @@ import MainFooter from "./components/Footer/MainFooter";
 
 const page = () => {
   return (
-    <Grid p={{ xs: 1, md: 3 }}>
+    <Grid width={"100%"}>
       <MainHeader />
       <Start />
       <MainFeatures />
@@ -24,7 +24,7 @@ const page = () => {
       <MainChallenges />
       <SlideShow />
       <BlogSection />
-      <MainTraderx />
+        <MainTraderx />
       <MainUserComments />
       <MainNewChallenges />
       <MainDisclaimer />

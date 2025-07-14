@@ -20,7 +20,7 @@ const MainHeader = () => {
   const handleToggleDrawer = () => setDrawerOpen(!drawerOpen);
 
   return (
-    <Box sx={{ px: { xs: 2, sm: 4 , md: 10}, py: 2, width: "100%"}}>
+    <Box sx={{ px: { xs: 2, sm: 4 , md: 10}, pr:{ xs: 0, sm: 0 , md: 10},  py: 2, width: "100%"}}>
       {!isMobile ? (
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item width={'33%'}>
@@ -34,7 +34,7 @@ const MainHeader = () => {
           </Grid>
         </Grid>
       ) : (
-        <Grid container alignItems="center" justifyContent="space-between" mt={-3} mr={-1} ml={2}>
+        <Grid container alignItems="center" justifyContent="space-between" >
           <Grid item>
             <Box onClick={handleToggleDrawer} sx={{ cursor: "pointer" }}>
               <Icon

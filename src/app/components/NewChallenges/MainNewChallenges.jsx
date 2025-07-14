@@ -20,17 +20,17 @@ const MainNewChallenges = () => {
   return (
     <Grid
       my={{ xs: 0, sm: 0, md: 10 }}
-      height={isSmall ? "100vh" : "45vh"}
+      height={isSmall ? "100vh" : "40vh"}
       container
       bgcolor="#272935"
       px={{ xs: 2, sm: 4, md: 10 }}
-      py={{ xs: 3, sm: 5, md: 0 }}
+      py={{ xs: 3, sm: 5, md: 2 }}
       spacing={2}
       alignItems="center"
       justifyContent="space-between"
       direction={{ xs: "column", md: "row" }}
     >
-      <Grid item xs={12} md={6} mt={{ xs: 0, sm: 0, md: -7 }}>
+      <Grid size={{ xs: 12, md: 6 }} mt={{ xs: 0, sm: 0, md: -7 }}>
         <Box display="flex" alignItems="center" mb={2}>
           <Icon icon="streamline-sharp:star-2-solid" width="28" height="28" />
           <Typography
@@ -98,18 +98,14 @@ const MainNewChallenges = () => {
         </Box>
       </Grid>
 
-      <Grid
-        item
-        xs={12}
-        md={6}
+      <Grid size={{ xs: 12, md: 5 }}
         textAlign="center"
-        mt={{ xs: 0, sm: 0, md: -3 }}
       >
         <Image
           src="/Photos/phone.png"
           alt="Phone"
-          width={isSmall ? 300 : isMedium ? 400 : 600}
-          height={isSmall ? 200 : isMedium ? 280 : 400}
+          width={isSmall ? 300 : isMedium ? 900 : 8000}
+          height={isSmall ? 200 : isMedium ? 380 : 600}
           style={{ maxWidth: "100%", height: "auto" }}
         />
       </Grid>

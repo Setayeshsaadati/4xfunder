@@ -65,16 +65,16 @@ const FeatureItems = () => {
           width={{ xs: "100%", md: "60%" }}
           mt={{ xs: 3, md: 0 }}
           sx={{
-            overflowX: { xs: "auto", sm: "auto" }, // Scroll on xs, no scroll on sm+
-            whiteSpace: { xs: "nowrap", sm: "nowrap" }, // Prevent text wrapping on xs
-            "&::-webkit-scrollbar": { height: "2px" }, // Scrollbar styling
+            overflowX: { xs: "auto", sm: "auto" },
+            whiteSpace: { xs: "nowrap", sm: "nowrap" },
+            "&::-webkit-scrollbar": { height: "2px" },
             "&::-webkit-scrollbar-thumb": {
               backgroundColor: "#00014",
               borderRadius: "4px",
             },
           }}
         >
-          <Grid container spacing={1} minWidth={{ xs: "620px", sm: "650px" }}>
+          <Grid container spacing={1} minWidth={{ xs: "620px", sm: "600px" }}>
             <Grid item xs={12} sm={6}>
               <Box
                 display="flex"
