@@ -1,5 +1,5 @@
-import { Box, Typography, Grid } from "@mui/material";
-import Image from "next/image";
+import { Box, Typography, Grid } from "@mui/material"
+import Image from "next/image"
 
 const Step1 = () => (
   <Grid
@@ -43,6 +43,6 @@ const Step1 = () => (
       </Box>
     </Grid>
   </Grid>
-);
+)
 
-export default Step1;
+export default Step1

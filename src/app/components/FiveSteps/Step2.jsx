@@ -1,5 +1,4 @@
-import { Box, Typography } from "@mui/material";
-import { Icon } from "@iconify/react";
+import { Box, Typography } from "@mui/material"
 
 const Step2 = () => (
   <Box sx={{ display: "flex", justifyContent: "space-between", color: "#fff" }}>
@@ -18,6 +17,6 @@ const Step2 = () => (
     </Box>
     <Box width={'35%'} p={5}>photo</Box>
   </Box>
-);
+)
 
-export default Step2;
+export default Step2

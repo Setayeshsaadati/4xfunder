@@ -1,5 +1,5 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
-import { Box, Grid, Typography } from "@mui/material";
+import { Icon } from "@iconify/react/dist/iconify.js"
+import { Box, Grid, Typography } from "@mui/material"
 
 const QuickAccess = () => {
   return (
@@ -22,7 +22,7 @@ const QuickAccess = () => {
         <Typography mt={-.5} mx={1}> وبلاگ </Typography>
       </Box>
     </Grid>
-  );
-};
+  )
+}
 
 export default QuickAccess

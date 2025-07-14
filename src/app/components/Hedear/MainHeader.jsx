@@ -1,23 +1,23 @@
-"use client";
-import { Grid, Box, useMediaQuery } from "@mui/material";
-import RightSide from "./RightSide";
-import Menu from "./Menu";
-import LeftSide from "./LeftSide";
-import { Icon } from "@iconify/react";
-import { useState } from "react";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import Image from "next/image";
+"use client"
+import { Grid, Box, useMediaQuery } from "@mui/material"
+import RightSide from "./RightSide"
+import Menu from "./Menu"
+import LeftSide from "./LeftSide"
+import { Icon } from "@iconify/react"
+import { useState } from "react"
+import Drawer from "@mui/material/Drawer"
+import List from "@mui/material/List"
+import ListItem from "@mui/material/ListItem"
+import ListItemButton from "@mui/material/ListItemButton"
+import ListItemText from "@mui/material/ListItemText"
+import Image from "next/image"
 
-const navItems = ["صفحه اصلی", "موفقیت", "چالش ها", "وبلاگ"];
+const navItems = ["صفحه اصلی", "موفقیت", "چالش ها", "وبلاگ"]
 
 const MainHeader = () => {
-  const isMobile = useMediaQuery("(max-width:900px)");
-  const [drawerOpen, setDrawerOpen] = useState(false);
-  const handleToggleDrawer = () => setDrawerOpen(!drawerOpen);
+  const isMobile = useMediaQuery("(max-width:900px)")
+  const [drawerOpen, setDrawerOpen] = useState(false)
+  const handleToggleDrawer = () => setDrawerOpen(!drawerOpen)
 
   return (
     <Box sx={{ px: { xs: 2, sm: 4 , md: 10}, pr:{ xs: 0, sm: 0 , md: 10},  py: 2, width: "100%"}}>
@@ -89,7 +89,7 @@ const MainHeader = () => {
         </Grid>
       )}
     </Box>
-  );
-};
+  )
+}
 
-export default MainHeader;
+export default MainHeader

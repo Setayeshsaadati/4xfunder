@@ -1,5 +1,5 @@
-import { Grid, Typography } from "@mui/material";
-import MainLayout from "./MainLayout";
+import { Grid, Typography } from "@mui/material"
+import MainLayout from "./MainLayout"
 
 const MainWhy4x = () => {
   return (
@@ -14,7 +14,7 @@ const MainWhy4x = () => {
       </Typography>
       <MainLayout />
     </Grid>
-  );
-};
+  )
+}
 
-export default MainWhy4x;
+export default MainWhy4x

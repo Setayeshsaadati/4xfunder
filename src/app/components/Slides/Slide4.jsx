@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material"
 
 const Slide4 = () => {
   return (
@@ -11,7 +11,7 @@ const Slide4 = () => {
     >
       <Box flex={4} textAlign="right">
         <Typography variant="h6" fontWeight="bold">
-          <span style={{ color: "#00D285" }}>آزادی در حجم معاملات</span>; بدون
+          <span style={{ color: "#00D285" }}>آزادی در حجم معاملات</span> بدون
           ریسک شناور
         </Typography>
         <Typography mt={2} color="#ccc">
@@ -22,6 +22,6 @@ const Slide4 = () => {
         </Typography>
       </Box>
     </Box>
-  );
-};
-export default Slide4;
+  )
+}
+export default Slide4

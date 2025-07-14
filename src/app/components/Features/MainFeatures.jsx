@@ -1,6 +1,6 @@
-import { Box, Grid } from "@mui/material";
-import FeatureItems from "./FeatureItems";
-import PriceList from "./PriceList";
+import { Box, Grid } from "@mui/material"
+import FeatureItems from "./FeatureItems"
+import PriceList from "./PriceList"
 
 const MainFeatures = () => {
   return (
@@ -33,7 +33,7 @@ const MainFeatures = () => {
         <PriceList />
       </Box>
     </Grid>
-  );
-};
+  )
+}
 
-export default MainFeatures;
+export default MainFeatures

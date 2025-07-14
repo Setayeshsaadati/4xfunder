@@ -1,5 +1,5 @@
-import { Grid, Typography } from "@mui/material";
-import MainNav from "./MainNav";
+import { Grid, Typography } from "@mui/material"
+import MainNav from "./MainNav"
 
 const MainFSteps = () => {
   return (
@@ -23,7 +23,7 @@ const MainFSteps = () => {
       </Typography>
       <MainNav />
     </Grid>
-  );
-};
+  )
+}
 
-export default MainFSteps;
+export default MainFSteps

@@ -1,17 +1,16 @@
 // components/Footer/Symbols.jsx
-import { Box, Grid, Typography, useTheme, useMediaQuery } from "@mui/material";
-import Image from "next/image";
-import React from "react";
+import { Box, Grid, Typography, useTheme, useMediaQuery } from "@mui/material"
+import Image from "next/image"
+import React from "react"
 
 const Symbols = () => {
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
 
   return (
     <Grid
       container
-      justifyContent={isSmall ? "center" : "flex-end"} // 👈 center on small, right on others
-      alignItems="flex-start"
+      justifyContent={isSmall ? "center" : "flex-end"} 
     >
       <Grid item>
         <Typography fontSize={20}>نماد های فورایکس فاندر</Typography>
@@ -49,7 +48,7 @@ const Symbols = () => {
         </Box>
       </Grid>
     </Grid>
-  );
-};
+  )
+}
 
-export default Symbols;
+export default Symbols

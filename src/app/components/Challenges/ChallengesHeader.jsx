@@ -1,6 +1,5 @@
-import { Box, Typography } from "@mui/material";
-import Dashboard from "./Dashboard";
-import TableComponent from "./TableComponent";
+import { Box, Typography } from "@mui/material"
+import Dashboard from "./Dashboard"
 
 const ChallengesHeader = () => {
   return (
@@ -23,7 +22,7 @@ const ChallengesHeader = () => {
       </Box>
       <Dashboard />
     </Box>
-  );
-};
+  )
+}
 
-export default ChallengesHeader;
+export default ChallengesHeader

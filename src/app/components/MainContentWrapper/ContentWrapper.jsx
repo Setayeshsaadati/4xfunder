@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box } from "@mui/material"
 
 const ContentWrapper = ({ children }) => {
   return (
@@ -23,7 +23,7 @@ const ContentWrapper = ({ children }) => {
         {children}
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default ContentWrapper;
+export default ContentWrapper

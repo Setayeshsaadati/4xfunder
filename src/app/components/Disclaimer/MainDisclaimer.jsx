@@ -1,11 +1,11 @@
-"use client";
+"use client"
 
-import { Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
-import Disclaimer from "./Disclaimer";
+import { Grid, Typography, useMediaQuery, useTheme } from "@mui/material"
+import Disclaimer from "./Disclaimer"
 
 const MainDisclaimer = () => {
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
 
   return (
     <Grid
@@ -27,7 +27,7 @@ const MainDisclaimer = () => {
       </Typography>
       <Disclaimer />
     </Grid>
-  );
-};
+  )
+}
 
-export default MainDisclaimer;
+export default MainDisclaimer

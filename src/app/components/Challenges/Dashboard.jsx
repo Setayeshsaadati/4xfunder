@@ -1,17 +1,17 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { Box, Button, useMediaQuery, useTheme } from "@mui/material";
-import TableComponent from "./TableComponent";
-import Image from "next/image";
+import { useState } from "react"
+import { Box, Button, useMediaQuery, useTheme } from "@mui/material"
+import TableComponent from "./TableComponent"
+import Image from "next/image"
 
 const Dashboard = () => {
-  const [selectedPhase, setSelectedPhase] = useState("Alpha");
-  const [selectedQuantity, setSelectedQuantity] = useState(1000);
+  const [selectedPhase, setSelectedPhase] = useState("Alpha")
+  const [selectedQuantity, setSelectedQuantity] = useState(1000)
 
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
-  const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
+  const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"))
 
   return (
     <Box>
@@ -114,26 +114,8 @@ const Dashboard = () => {
           style={{ objectFit: "contain" }}
         />
       </Box>
-
-      {/* <Box
-        mt={-80}
-        sx={{
-          display: isSmall ? "none" : isMedium? 'none' : 'absolute',
-          position: "relative",
-          width: 55,
-          height: 60,
-          mr: 155,
-        }}
-      >
-        <Image
-          src="/Photos/coin.png"
-          alt=""
-          fill
-          style={{ objectFit: "contain" }}
-        />
-      </Box> */}
     </Box>
-  );
-};
+  )
+}
 
-export default Dashboard;
+export default Dashboard

@@ -1,5 +1,5 @@
-import { Box } from "@mui/material";
-import { AnimatePresence } from "framer-motion";
+import { Box } from "@mui/material"
+import { AnimatePresence } from "framer-motion"
 
 const RightSection = ({ selectedComponent }) => (
   <Box
@@ -13,6 +13,6 @@ const RightSection = ({ selectedComponent }) => (
   >
     <AnimatePresence mode="wait">{selectedComponent}</AnimatePresence>
   </Box>
-);
+)
 
-export default RightSection;
+export default RightSection

@@ -1,5 +1,5 @@
 // components/FullWidthWrapper/FullWidthWrapper.jsx
-import { Box } from "@mui/material";
+import { Box } from "@mui/material"
 
 const FullWidthWrapper = ({ children }) => {
   return (
@@ -10,7 +10,7 @@ const FullWidthWrapper = ({ children }) => {
     >
       {children}
     </Box>
-  );
-};
+  )
+}
 
-export default FullWidthWrapper;
+export default FullWidthWrapper

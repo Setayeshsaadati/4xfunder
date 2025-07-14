@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import {
   Box,
@@ -9,9 +9,9 @@ import {
   CardMedia,
   CardContent,
   Chip,
-} from "@mui/material";
-import { Icon } from "@iconify/react";
-import Link from "next/link";
+} from "@mui/material"
+import { Icon } from "@iconify/react"
+import Link from "next/link"
 
 const blogData = [
   {
@@ -44,10 +44,10 @@ const blogData = [
     image: "/Photos/chart.png",
     link: "/blog/3",
   },
-];
+]
 
 const BlogSection = () => {
-  if (!blogData || blogData.length === 0) return null;
+  if (!blogData || blogData.length === 0) return null
 
   return (
     <Box
@@ -265,7 +265,7 @@ const BlogSection = () => {
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default BlogSection;
+export default BlogSection

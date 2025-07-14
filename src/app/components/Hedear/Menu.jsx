@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material"
 
 const Menu = () => {
   return (
@@ -50,7 +50,7 @@ const Menu = () => {
         وبلاگ
       </Typography>
     </Box>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu

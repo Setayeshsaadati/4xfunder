@@ -1,44 +1,44 @@
-"use client";
+"use client"
 
-import { Icon } from "@iconify/react";
+import { Icon } from "@iconify/react"
 import {
   Box,
   Button,
   Typography,
   useTheme,
   useMediaQuery,
-} from "@mui/material";
-import Image from "next/image";
+} from "@mui/material"
+import Image from "next/image"
 
 const Start = () => {
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
-  const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
+  const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"))
 
   const getRightImageWidth = () => {
-    if (isSmall) return 60;
-    if (isMedium) return 120;
-    return 200;
-  };
+    if (isSmall) return 60
+    if (isMedium) return 120
+    return 200
+  }
   
 
   const getRightImageHight = () => {
-    if (isSmall) return 60;
-    if (isMedium) return 80;
-    return 200;
-  };
+    if (isSmall) return 60
+    if (isMedium) return 80
+    return 200
+  }
 
   const getLeftImageHight = () => {
-    if (isSmall) return 130;
-    if (isMedium) return 120;
-    return 220;
-  };
+    if (isSmall) return 130
+    if (isMedium) return 120
+    return 220
+  }
 
   const getLeftImageWidth = () => {
-    if (isSmall) return 80;
-    if (isMedium) return 180;
-    return 170;
-  }; 
+    if (isSmall) return 80
+    if (isMedium) return 180
+    return 170
+  } 
 
   return (
     <Box
@@ -146,7 +146,7 @@ const Start = () => {
         />
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default Start;
+export default Start

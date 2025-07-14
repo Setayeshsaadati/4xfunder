@@ -1,5 +1,5 @@
-import { Icon } from "@iconify/react";
-import { Box, Button } from "@mui/material";
+import { Icon } from "@iconify/react"
+import { Box, Button } from "@mui/material"
 
 const LeftSide = () => {
   return (
@@ -51,7 +51,7 @@ const LeftSide = () => {
             fontSize={25}
             sx={{
               "&:hover": {
-                fontSize: 29, // Slightly bigger icon on hover
+                fontSize: 29,
                 transition: "font-size 0.3s ease-in-out",
               },
             }}
@@ -79,7 +79,7 @@ const LeftSide = () => {
         />
       </Button>
     </Box>
-  );
-};
+  )
+}
 
-export default LeftSide;
+export default LeftSide

@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import { Icon } from "@iconify/react";
-import { Box, Button, Grid, Typography } from "@mui/material";
-import Image from "next/image";
+import { Icon } from "@iconify/react"
+import { Box, Button, Grid, Typography } from "@mui/material"
+import Image from "next/image"
 
 const Traderx = () => {
   return (
@@ -137,7 +137,7 @@ const Traderx = () => {
         </Grid>
       </Grid>
     </Box>
-  );
-};
+  )
+}
 
-export default Traderx;
+export default Traderx

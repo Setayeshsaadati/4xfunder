@@ -1,23 +1,22 @@
-import { Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
-import Image from "next/image";
-import React from "react";
+import { Grid, Typography, useMediaQuery, useTheme } from "@mui/material"
+import Image from "next/image"
 
-const Component2 = () => {
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
-  const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"));
+const Component1 = () => {
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
+  const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"))
 
   const getImageWidth = () => {
-    if (isSmall) return 280;
-    if (isMedium) return 150;
-    return 200;
-  };
+    if (isSmall) return 280
+    if (isMedium) return 500
+    return 520
+  }
 
   const getImageHight = () => {
-    if (isSmall) return 200;
-    if (isMedium) return 120;
-    return 200;
-  };
+    if (isSmall) return 200
+    if (isMedium) return 300
+    return 320
+  }
   return (
     <Grid container direction="column" alignItems="center">
       <Typography
@@ -25,7 +24,7 @@ const Component2 = () => {
         fontSize={{ xs: 20, md: 23 }}
         fontWeight={900}
       >
-        2
+        دسترسی
       </Typography>
       <Typography
         color="white"
@@ -46,7 +45,7 @@ const Component2 = () => {
         alt="photo1"
       />
     </Grid>
-  );
-};
+  )
+}
 
-export default Component2;
+export default Component1

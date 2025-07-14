@@ -1,14 +1,14 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { Box, IconButton, useTheme, useMediaQuery } from "@mui/material";
-import { Icon } from "@iconify/react";
-import Slide1 from "./Slide1";
-import Slide2 from "./Slide2";
-import Slide3 from "./Slide3";
-import Slide4 from "./Slide4";
-import Slide5 from "./Slide5";
-import Slide6 from "./Slide6";
+import { useState } from "react"
+import { Box, IconButton, useTheme, useMediaQuery } from "@mui/material"
+import { Icon } from "@iconify/react"
+import Slide1 from "./Slide1"
+import Slide2 from "./Slide2"
+import Slide3 from "./Slide3"
+import Slide4 from "./Slide4"
+import Slide5 from "./Slide5"
+import Slide6 from "./Slide6"
 
 const slides = [
   <Slide1 />,
@@ -17,18 +17,18 @@ const slides = [
   <Slide4 />,
   <Slide5 />,
   <Slide6 />,
-];
+]
 
 const SlideShadow = () => {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0)
 
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
-  const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
+  const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"))
 
-  const handleNext = () => setCurrent((prev) => (prev + 1) % slides.length);
+  const handleNext = () => setCurrent((prev) => (prev + 1) % slides.length)
   const handlePrev = () =>
-    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
 
   return (
     <Box
@@ -128,7 +128,7 @@ const SlideShadow = () => {
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default SlideShadow;
+export default SlideShadow

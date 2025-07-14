@@ -1,11 +1,11 @@
 'use client'
 
-import { Typography, Grid, useTheme, useMediaQuery, Box } from "@mui/material";
-import TestimonialSection from "./TestimonialSection";
+import { Typography, Grid, useTheme, useMediaQuery, Box } from "@mui/material"
+import TestimonialSection from "./TestimonialSection"
 
 const MainUserComments = () => {
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
 
   return (
     <Box mt={20} px={isSmall ? 2 : 5}>
@@ -25,7 +25,6 @@ const MainUserComments = () => {
       </Grid>
       <TestimonialSection />
     </Box>
-  );
-};
-
-export default MainUserComments;
+  )
+}
+export default MainUserComments

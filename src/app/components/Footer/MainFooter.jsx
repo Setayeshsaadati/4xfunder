@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import {
   Divider,
@@ -6,17 +6,17 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
-} from "@mui/material";
-import FunderInfo from "./FunderInfo";
-import QuickAccess from "./QuickAccess";
-import Links from "./Links";
-import Symbols from "./Symbols";
-import ScrollToTopButton from "./ScrollToTopButton";
+} from "@mui/material"
+import FunderInfo from "./FunderInfo"
+import QuickAccess from "./QuickAccess"
+import Links from "./Links"
+import Symbols from "./Symbols"
+import ScrollToTopButton from "./ScrollToTopButton"
 
 const MainFooter = () => {
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
-  const isMedium = useMediaQuery(theme.breakpoints.down("sm", "md"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
+  const isMedium = useMediaQuery(theme.breakpoints.down("sm", "md"))
 
   return (
     <Grid justifyContent="center" justifyItems={'center'} mb={4}>
@@ -62,7 +62,7 @@ const MainFooter = () => {
         2024 © | کلیه حقوق برای فورایکس فاندر محفوظ می باشد.
       </Typography>
     </Grid>
-  );
-};
+  )
+}
 
-export default MainFooter;
+export default MainFooter

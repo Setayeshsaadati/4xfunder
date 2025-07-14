@@ -1,6 +1,6 @@
-"use client";
+"use client"
 
-import { Icon } from "@iconify/react";
+import { Icon } from "@iconify/react"
 import {
   Box,
   Button,
@@ -8,26 +8,26 @@ import {
   Typography,
   useTheme,
   useMediaQuery,
-} from "@mui/material";
-import Image from "next/image";
-import React from "react";
+} from "@mui/material"
+import Image from "next/image"
+import React from "react"
 
 const MainNewChallenges = () => {
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
-  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"))
 
   const getPhoneImageWidth = () => {
-    if (isSmall) return 300;
-    if (isMedium) return 500;
-    return 650;
-  };
+    if (isSmall) return 300
+    if (isMedium) return 500
+    return 650
+  }
 
   const getPhoneImageHeight = () => {
-    if (isSmall) return 200;
-    if (isMedium) return 380;
-    return 600;
-  };
+    if (isSmall) return 200
+    if (isMedium) return 380
+    return 600
+  }
 
   return (
     <Grid
@@ -120,7 +120,7 @@ const MainNewChallenges = () => {
         />
       </Grid>
     </Grid>
-  );
-};
+  )
+}
 
-export default MainNewChallenges;
+export default MainNewChallenges

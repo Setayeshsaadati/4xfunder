@@ -1,11 +1,11 @@
-import { Icon } from "@iconify/react";
-import { Box, Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
-import Image from "next/image";
+import { Icon } from "@iconify/react"
+import { Box, Grid, Typography, useMediaQuery, useTheme } from "@mui/material"
+import Image from "next/image"
 
 const FunderInfo = () => {
 
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
 
   return (
     <Grid m={"auto"}>
@@ -50,7 +50,7 @@ const FunderInfo = () => {
         </Box>
       </Box>
     </Grid>
-  );
-};
+  )
+}
 
-export default FunderInfo;
+export default FunderInfo

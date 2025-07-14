@@ -1,13 +1,13 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { Box, Typography } from "@mui/material";
-import { motion } from "framer-motion";
-import Step1 from "./Step1";
-import Step2 from "./Step2";
-import Step3 from "./Step3";
-import Step4 from "./Step4";
-import Step5 from "./Step5";
+import { useState } from "react"
+import { Box, Typography } from "@mui/material"
+import { motion } from "framer-motion"
+import Step1 from "./Step1"
+import Step2 from "./Step2"
+import Step3 from "./Step3"
+import Step4 from "./Step4"
+import Step5 from "./Step5"
 
 const steps = [
   { title: " گام اول", component: Step1 },
@@ -15,10 +15,10 @@ const steps = [
   { title: "گام سوم", component: Step3 },
   { title: "گام چهارم", component: Step4 },
   { title: "گام پنجم", component: Step5 },
-];
+]
 
 const MainNav = () => {
-  const [activeStep, setActiveStep] = useState(0);
+  const [activeStep, setActiveStep] = useState(0)
 
   return (
     <Box
@@ -89,7 +89,7 @@ const MainNav = () => {
         {steps[activeStep].component()}
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default MainNav;
+export default MainNav

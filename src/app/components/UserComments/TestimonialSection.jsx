@@ -6,8 +6,8 @@ import {
   Paper,
   useTheme,
   useMediaQuery,
-} from "@mui/material";
-import { Icon } from "@iconify/react";
+} from "@mui/material"
+import { Icon } from "@iconify/react"
 
 const testimonials = [
   {
@@ -32,11 +32,11 @@ const testimonials = [
     image: "/Photos/1.png",
     highlight: "ترید بدون ریسک",
   },
-];
+]
 
 const TestimonialSection = () => {
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
 
   return (
     <Box py={6} px={isSmall ? 2 : 3} dir="rtl">
@@ -116,7 +116,7 @@ const TestimonialSection = () => {
         ))}
       </Grid>
     </Box>
-  );
-};
+  )
+}
 
-export default TestimonialSection;
+export default TestimonialSection

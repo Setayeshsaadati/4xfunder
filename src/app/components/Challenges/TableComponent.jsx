@@ -1,7 +1,7 @@
-"use client";
+"use client"
 
-import { useState, useEffect } from "react";
-import { Box, Typography } from "@mui/material";
+import { useState, useEffect } from "react"
+import { Box, Typography } from "@mui/material"
 
 const TableComponent = ({ phase, quantity }) => {
   const [data, setData] = useState({
@@ -12,7 +12,7 @@ const TableComponent = ({ phase, quantity }) => {
     totalProfit: "",
     maxInvestment: "",
     cost: "",
-  });
+  })
 
   const fetchData = async (phase, quantity) => {
     const mockData = {
@@ -92,13 +92,13 @@ const TableComponent = ({ phase, quantity }) => {
           cost: "$20",
         },
       },
-    };
-    return mockData[phase][quantity];
-  };
+    }
+    return mockData[phase][quantity]
+  }
 
   useEffect(() => {
     const getData = async () => {
-      const result = await fetchData(phase, quantity);
+      const result = await fetchData(phase, quantity)
       setData(
         result || {
           durationTest: "",
@@ -109,10 +109,10 @@ const TableComponent = ({ phase, quantity }) => {
           maxInvestment: "",
           cost: "",
         }
-      );
-    };
-    getData();
-  }, [phase, quantity]);
+      )
+    }
+    getData()
+  }, [phase, quantity])
 
   return (
     <Box
@@ -223,7 +223,7 @@ const TableComponent = ({ phase, quantity }) => {
         ))}
       </Box>
     </Box>
-  );
-}; 
+  )
+} 
 
-export default TableComponent;
+export default TableComponent

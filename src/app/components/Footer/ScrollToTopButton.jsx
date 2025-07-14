@@ -1,21 +1,21 @@
-"use client";
+"use client"
 
-import { Box, useMediaQuery, useTheme } from "@mui/material";
-import { Icon } from "@iconify/react";
+import { Box, useMediaQuery, useTheme } from "@mui/material"
+import { Icon } from "@iconify/react"
 
 const ScrollToTopButton = () => {
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
 
   return (
     <Box
       width="100%" 
       display="flex"
-      justifyContent={isSmall ? "center" : "end"} // 👈 center on mobile, right on others
+      justifyContent={isSmall ? "center" : "end"} 
       mb={2}
     >
       <Box
@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
         <Icon icon="solar:arrow-up-outline" fontSize={30} />
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default ScrollToTopButton;
+export default ScrollToTopButton

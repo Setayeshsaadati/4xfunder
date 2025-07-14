@@ -1,5 +1,5 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
-import { Box, Grid, Typography } from "@mui/material";
+import { Icon } from "@iconify/react/dist/iconify.js"
+import { Box, Grid, Typography } from "@mui/material"
 
 const Links = () => {
   return (
@@ -24,7 +24,7 @@ const Links = () => {
         </Typography>
       </Box>
     </Grid>
-  );
-};
+  )
+}
 
 export default Links

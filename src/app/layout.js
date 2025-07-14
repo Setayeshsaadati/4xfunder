@@ -1,10 +1,9 @@
-// app/layout.jsx
-import "./globals.css";
-import { Box } from "@mui/material";
+import "./globals.css"
+import { Box } from "@mui/material"
 
 export const metadata = {
   title: "4xFunder",
-};
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -15,5 +14,5 @@ export default function RootLayout({ children }) {
         </Box>
       </body>
     </html>
-  );
+  )
 }

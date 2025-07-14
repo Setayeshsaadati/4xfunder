@@ -1,7 +1,7 @@
-"use client";
+"use client"
 
-import { Box, Grid, Typography } from "@mui/material";
-import React, { useState, useEffect } from "react";
+import { Box, Grid, Typography } from "@mui/material"
+import { useState, useEffect } from "react"
 
 const fetchCryptoPrices = async () => {
   const prices = {
@@ -9,14 +9,14 @@ const fetchCryptoPrices = async () => {
     avax: { price: 24.18, change: 1.2, direction: "up" },
     eth: { price: 44.18, change: -0.3, direction: "down" },
     btc: { price: 2418.56, change: 2.5, direction: "up" },
-  };
-  return prices;
-};
+  }
+  return prices
+}
 
 const PriceItem = ({ name, imageSrc, apiData }) => {
-  const { price, direction } = apiData;
-  const color = direction === "up" ? "#00ff00" : "#ff0000";
-  const arrow = direction === "up" ? "▲" : "▼";
+  const { price, direction } = apiData
+  const color = direction === "up" ? "#00ff00" : "#ff0000"
+  const arrow = direction === "up" ? "▲" : "▼"
 
   return (
     <Grid
@@ -53,19 +53,19 @@ const PriceItem = ({ name, imageSrc, apiData }) => {
         </Typography>
       </Grid>
     </Grid>
-  );
-};
+  )
+}
 
 const PriceList = () => {
-  const [prices, setPrices] = useState({});
+  const [prices, setPrices] = useState({})
 
   useEffect(() => {
     const getPrices = async () => {
-      const data = await fetchCryptoPrices();
-      setPrices(data);
-    };
-    getPrices();
-  }, []);
+      const data = await fetchCryptoPrices()
+      setPrices(data)
+    }
+    getPrices()
+  }, [])
 
   return (
     <Box
@@ -106,7 +106,7 @@ const PriceList = () => {
         />
       </Grid>
     </Box>
-  );
-};
+  )
+}
 
-export default PriceList;
+export default PriceList

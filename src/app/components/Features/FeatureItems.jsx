@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import { Icon } from "@iconify/react";
-import { Box, Grid, Typography } from "@mui/material";
-import Image from "next/image";
+import { Icon } from "@iconify/react"
+import { Box, Grid, Typography } from "@mui/material"
+import Image from "next/image"
 
 const FeatureItems = () => {
   return (
@@ -160,7 +160,7 @@ const FeatureItems = () => {
         </Box>
       </Grid>
     </Grid>
-  );
-};
+  )
+}
 
-export default FeatureItems;
+export default FeatureItems

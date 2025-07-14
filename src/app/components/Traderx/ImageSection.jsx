@@ -1,38 +1,37 @@
-"use client";
+"use client"
 
-import { Box, useMediaQuery, useTheme } from "@mui/material";
-import Image from "next/image";
+import { Box, useMediaQuery, useTheme } from "@mui/material"
+import Image from "next/image"
 
 const ImageSection = () => {
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
-  const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  const theme = useTheme()
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"))
+  const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"))
 
   const getCryptoSize = () => {
-    if (isSmall) return { width: 280, height: 300 };
-    if (isMedium) return { width: 400, height: 420 };
-    return { width: 490, height: 500 };
-  };
+    if (isSmall) return { width: 280, height: 300 }
+    if (isMedium) return { width: 400, height: 420 }
+    return { width: 490, height: 500 }
+  }
 
   const getBuyImagePosition = () => {
-    if (isSmall) return { bottom: -20, right: "25%" };
-    if (isMedium) return { bottom: 25, right: -20 };
-    return { bottom: -30, right: -40 };
-  };
+    if (isSmall) return { bottom: -20, right: "25%" }
+    if (isMedium) return { bottom: 25, right: -20 }
+    return { bottom: -30, right: -40 }
+  }
 
   const getChartSize = () => {
-    if (isSmall) return { width: 220, height: 230 };
-    if (isMedium) return { width: 280, height: 300 };
-    return { width: 250, height: 290 };
-  };
+    if (isSmall) return { width: 220, height: 230 }
+    if (isMedium) return { width: 280, height: 300 }
+    return { width: 250, height: 290 }
+  }
 
-  const cryptoSize = getCryptoSize();
-  const buyImagePosition = getBuyImagePosition();
-  const chartSize = getChartSize();
+  const cryptoSize = getCryptoSize()
+  const buyImagePosition = getBuyImagePosition()
+  const chartSize = getChartSize()
 
   return (
     <Box position="relative" width="100%" zIndex={2} mt={5}>
-      {/* Main Crypto Image */}
       <Box
         textAlign="center"
         sx={{
@@ -64,7 +63,7 @@ const ImageSection = () => {
         />
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default ImageSection;
+export default ImageSection
