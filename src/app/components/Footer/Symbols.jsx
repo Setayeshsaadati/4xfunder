@@ -1,4 +1,3 @@
-// components/Footer/Symbols.jsx
 import { Box, Grid, Typography, useTheme, useMediaQuery } from "@mui/material"
 import Image from "next/image"
 import React from "react"

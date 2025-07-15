@@ -13,10 +13,11 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.2.0",
-    "framer-motion": "^12.23.3",
+    "framer-motion": "^12.23.5",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-intersection-observer": "^9.16.0",
     "vuesax": "^4.0.1-alpha.25"
   },
   "devDependencies": {

@@ -126,7 +126,7 @@ const TableComponent = ({ phase, quantity }) => {
     >
       <Box
         sx={{
-          width: "90%",
+          width: "95%",
           m: "auto",
           borderRadius: "20px",
           minHeight: "90vh",
@@ -141,6 +141,7 @@ const TableComponent = ({ phase, quantity }) => {
           sx={{
             zIndex: 100,
             height: "10%",
+            ml: 2.5,
             px: 15,
             py: 5,
             display: "flex",

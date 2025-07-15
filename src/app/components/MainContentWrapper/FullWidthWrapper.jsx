@@ -1,4 +1,3 @@
-// components/FullWidthWrapper/FullWidthWrapper.jsx
 import { Box } from "@mui/material"
 
 const FullWidthWrapper = ({ children }) => {
