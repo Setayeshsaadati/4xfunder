@@ -1,7 +1,9 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Box, Typography } from "@mui/material"
+import { Box } from "@mui/material"
+import TableHeader from "./TableHeader"
+import TableRow from "./TableRow"
 
 const TableComponent = ({ phase, quantity }) => {
   const [data, setData] = useState({
@@ -114,6 +116,17 @@ const TableComponent = ({ phase, quantity }) => {
     getData()
   }, [phase, quantity])
 
+  const rows = [
+    { label: "مدت ترید", values: [data.durationTest, data.durationTest, data.durationTest] },
+    { label: "حداقل روزهای ترید", values: [data.minPeriod, data.minPeriod, data.minPeriod] },
+    { label: "حداکثر ضرر (درصد)", values: [data.annualProfit, data.annualProfit, data.annualProfit] },
+    { label: "حداکثر ضرر", values: [data.maxProfit, data.maxProfit, data.maxProfit] },
+    { label: "سود مورد نظر (درصد)", values: [data.totalProfit, data.totalProfit, data.totalProfit] },
+    { label: "سود مورد نظر", values: [data.maxInvestment, data.maxInvestment, data.maxInvestment] },
+    { label: "سقف رشد سرمایه", values: [data.cost, data.cost, data.cost] },
+    { label: "مبلغ (یکبار پرداخت)", values: [data.cost, data.cost, data.cost] },
+  ]
+
   return (
     <Box
       sx={{
@@ -129,102 +142,25 @@ const TableComponent = ({ phase, quantity }) => {
           width: "95%",
           m: "auto",
           borderRadius: "20px",
-          minHeight: "90vh",
           color: "#fff",
           backgroundColor: "#0C0D1733",
-          backdropFilter: { xs: "blur(20px)", md: "blur(40px)" },
+          backdropFilter: { xs: "blur(20px)", md: "blur(30px)" },
           direction: "rtl",
           minWidth: { xs: "650px", sm: "auto" },
         }}
       >
-        <Box
-          sx={{
-            zIndex: 100,
-            height: "10%",
-            ml: 2.5,
-            px: 15,
-            py: 5,
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            backgroundColor: "#272935",
-            borderTopRightRadius: "20px",
-            borderTopLeftRadius: "20px",
-            gap: 1,
-          }}
-        >
-          <Typography sx={{ fontWeight: "bold", fontSize: 20 }}>
-            ویژگی ها
-          </Typography>
-          <Typography sx={{ fontWeight: "bold", fontSize: 20 }}>
-            Step 1
-          </Typography>
-          <Typography sx={{ fontWeight: "bold", fontSize: 20 }}>
-            Step 2
-          </Typography>
-          <Typography sx={{ fontWeight: "bold", fontSize: 20 }}>
-            Step 3
-          </Typography>
-        </Box>
-        {[
-          {
-            label: "مدت تست",
-            values: [data.durationTest, data.durationTest, data.durationTest],
-          },
-          {
-            label: "حداقل دوره",
-            values: [data.minPeriod, data.minPeriod, data.minPeriod],
-          },
-          {
-            label: "سود سالانه",
-            values: [data.annualProfit, data.annualProfit, data.annualProfit],
-          },
-          {
-            label: "حداکثر سود",
-            values: [data.maxProfit, data.maxProfit, data.maxProfit],
-          },
-          {
-            label: "سود کل",
-            values: [data.totalProfit, data.totalProfit, data.totalProfit],
-          },
-          {
-            label: "حداکثر سرمایه",
-            values: [
-              data.maxInvestment,
-              data.maxInvestment,
-              data.maxInvestment,
-            ],
-          },
-          { label: "هزینه", values: [data.cost, data.cost, data.cost] },
-        ].map(({ label, values }, i) => (
-          <Box
+        <TableHeader />
+        {rows.map((row, i) => (
+          <TableRow
             key={i}
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              textAlign: "center",
-              alignItems: "center",
-              height: "9%",
-              px: 15,
-              py: 5,
-              borderBottom: i !== 6 ? "2px solid #272935" : "none",
-              gap: 0,
-            }}
-          >
-            <Typography sx={{ minWidth: "auto", fontWeight: "bold" }}>
-              {label}
-            </Typography>
-            {values.map((val, idx) => (
-              <Typography key={idx} sx={{ minWidth: "auto" }}>
-                {val || "-"}
-              </Typography>
-            ))}
-          </Box>
+            label={row.label}
+            values={row.values}
+            isLast={i === rows.length - 1}
+          />
         ))}
       </Box>
     </Box>
   )
-} 
+}
 
 export default TableComponent

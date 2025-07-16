@@ -70,7 +70,7 @@ const LeftSection = ({ onSelect }) => {
               delay: index * 0.1,
               ease: "easeOut",
             }}
-            style={{ width: "100%", maxWidth: 320 }}
+            style={{ width: "100%", maxWidth: 380 }}
           >
             <ItemButton
               title={item}

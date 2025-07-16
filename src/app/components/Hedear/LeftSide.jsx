@@ -1,19 +1,24 @@
+"use client"
+
 import { Icon } from "@iconify/react"
 import { Box, Button } from "@mui/material"
 
 const LeftSide = () => {
   return (
-    <Box display="flex">
-      <Box
-        display="flex"
-        sx={{
-          ml: { xs: 2, sm: 4, md: 2 },
-          mt: { xs: 1, sm: 2, md: 1 },
-        }}
-      >
+    <Box
+      display="flex"
+      alignItems='flex-end'
+      justifyContent='left'
+      sx={{
+        width: "100%",
+        px: { xs: 2, sm: 3, md: 4 },
+        mt: { xs: 1, sm: 2, md: 1 },
+      }}
+    >
+      <Box display="flex" >
         <Box
           sx={{
-            mr: { xs: 1, sm: 50, md: 1 },
+            ml: { xs: 1, md: 1 },
             cursor: "pointer",
             "&:hover": {
               fontSize: 20,
@@ -29,14 +34,9 @@ const LeftSide = () => {
               marginLeft: 20,
               paddingLeft: 15,
             }}
-            sx={{
-              "&:hover": {
-                fontSize: 32,
-                transition: "font-size 0.3s ease-in-out",
-              },
-            }}
           />
         </Box>
+
         <Box
           sx={{
             cursor: "pointer",
@@ -46,23 +46,14 @@ const LeftSide = () => {
             },
           }}
         >
-          <Icon
-            icon="solar:magnifer-outline"
-            fontSize={25}
-            sx={{
-              "&:hover": {
-                fontSize: 29,
-                transition: "font-size 0.3s ease-in-out",
-              },
-            }}
-          />
+          <Icon icon="solar:magnifer-outline" fontSize={25} />
         </Box>
       </Box>
 
       <Button
         variant="contained"
-        color="white"
         sx={{
+          mr: 2,
           px: 2,
           py: 1,
           bgcolor: "#00cc99",

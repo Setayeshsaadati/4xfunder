@@ -20,22 +20,22 @@ const MainHeader = () => {
   const handleToggleDrawer = () => setDrawerOpen(!drawerOpen)
 
   return (
-    <Box sx={{ px: { xs: 2, sm: 4 , md: 10}, pr:{ xs: 0, sm: 0 , md: 10},  py: 2, width: "100%"}}>
+    <Box  mt={3} mb={2} px={2}>
       {!isMobile ? (
-        <Grid container alignItems="center" justifyContent="space-between">
-          <Grid item width={'33%'}>
+        <Grid container >
+          <Grid size={{ xs: 12, md: 4 }}>
             <RightSide />
           </Grid>
-          <Grid item width={'33%'}>
+          <Grid size={{ xs: 12, md: 4}}>
             <Menu />
           </Grid>
-          <Grid item width={'33%'}>
+          <Grid  size={{ xs: 12, md: 4 }}>
             <LeftSide />
           </Grid>
         </Grid>
       ) : (
         <Grid container alignItems="center" justifyContent="space-between" >
-          <Grid item>
+          <Grid >
             <Box onClick={handleToggleDrawer} sx={{ cursor: "pointer" }}>
               <Icon
                 icon="solar:hamburger-menu-linear"
@@ -49,7 +49,7 @@ const MainHeader = () => {
               open={drawerOpen}
               onClose={handleToggleDrawer}
               PaperProps={{
-                sx: { width: "66%", bgcolor: "#121212", color: "#fff" },
+                sx: { bgcolor: "#121212", color: "#fff" },
               }}
             >
               <List>
@@ -66,10 +66,10 @@ const MainHeader = () => {
               </List>
             </Drawer>
           </Grid>
-          <Grid item>
+          <Grid >
             <Image src="/Photos/Logo.png" width={48} height={41} alt="logo" />
           </Grid>
-          <Grid item>
+          <Grid >
             <Box
               bgcolor="#00CC99"
               borderRadius="50%"

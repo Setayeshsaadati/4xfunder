@@ -34,7 +34,11 @@ const Dashboard = () => {
 
   const tableVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.7, ease: "easeOut" },
+    },
   }
 
   const coinVariants = {
@@ -137,12 +141,33 @@ const Dashboard = () => {
           initial="hidden"
           animate="visible"
           key={`${selectedPhase}-${selectedQuantity}`}
+          style={{
+            position: 'relative'
+          }}
         >
-          <Box zIndex={100}>
-            <TableComponent
-              phase={selectedPhase}
-              quantity={selectedQuantity}
+          <motion.div
+            variants={coinVariants}
+            initial="hidden"
+            animate="visible"
+            style={{
+              display: isSmall ? "none" : isMedium ? "block" : "block",
+              position: 'absolute',
+              left: 15,
+              top: 120,
+              width: 65,
+              height: 55,
+              zIndex: -1,
+            }}
+          >
+            <Image
+              src="/Photos/coin.png"
+              alt=""
+              fill
+              style={{ objectFit: "contain" }}
             />
+          </motion.div>
+          <Box zIndex={100} ml={ isSmall ? 0 : isMedium ? 0 : 2.5}>
+            <TableComponent phase={selectedPhase} quantity={selectedQuantity} />
           </Box>
         </motion.div>
 
@@ -151,12 +176,13 @@ const Dashboard = () => {
           initial="hidden"
           animate="visible"
           style={{
-            display: isSmall ? "none" : isMedium ? "none" : "block",
+            display: isSmall ? "none" : isMedium ? "block" : "block",
             position: "relative",
             width: 85,
             height: 85,
             mr: 0,
             marginTop: -40,
+            zIndex: -1,
           }}
         >
           <Image

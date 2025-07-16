@@ -21,12 +21,13 @@ const ScrollToTopButton = () => {
       <Box
         bgcolor="#00CC99"
         height={30}
-        p={1.5}
+        p={.5}
+        pr={.7}
         borderRadius={2}
         sx={{ cursor: "pointer" }}
         onClick={scrollToTop}
       >
-        <Icon icon="solar:arrow-up-outline" fontSize={30} />
+        <Icon icon="typcn:arrow-up" fontSize={30} />
       </Box>
     </Box>
   )

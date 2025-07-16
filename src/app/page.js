@@ -17,7 +17,7 @@ import MainWhy4x from "./components/WhyFourxFunder/MainWhy4x"
 
 const page = () => {
   return (
-    <Box width="100%">
+    <Box width={'100%'}>
       <ContentWrapper>
         <MainHeader />
         <Start />

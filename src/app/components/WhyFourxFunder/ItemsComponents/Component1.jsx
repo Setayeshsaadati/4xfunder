@@ -33,7 +33,7 @@ const Component1 = () => {
           fontSize={{ xs: 20, md: 23 }}
           fontWeight={900}
         >
-          دسترسی
+          دسترسی به سرمایه
         </Typography>
       </motion.div>
 

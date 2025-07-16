@@ -5,14 +5,13 @@ const ContentWrapper = ({ children }) => {
     <Box
       sx={{
         flexGrow: 1,
-        width: "100%",
       }}
     >
       <Box
         sx={{
           maxWidth: {
-            xs: "90%",
-            sm: "800px",
+            xs: "95%",
+            sm: "700px",
             md: "850px",
             lg: "79%",
           },

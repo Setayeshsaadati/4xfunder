@@ -3,12 +3,14 @@ import { Box, Typography } from "@mui/material"
 const Menu = () => {
   return (
     <Box
+    mt={3}
       display="flex"
-      sx={{ textAlign: "center", mr: { xs: 2, sm: 4, md: -20 } }}
+      justifyContent={'space-around'}
     >
       <Typography
         variant="body1"
         sx={{
+
           color: "#fff",
           fontSize: 16,
           cursor: "pointer",
@@ -20,7 +22,6 @@ const Menu = () => {
         variant="body1"
         sx={{
           color: "#fff",
-          mr: 8,
           fontSize: 16,
           cursor: "pointer",
         }}
@@ -31,7 +32,6 @@ const Menu = () => {
         variant="body1"
         sx={{
           color: "#fff",
-          mr: 8,
           fontSize: 16,
           cursor: "pointer",
         }}
@@ -42,7 +42,6 @@ const Menu = () => {
         variant="body1"
         sx={{
           color: "#fff",
-          mr: 8,
           fontSize: 16,
           cursor: "pointer",
         }}

@@ -37,7 +37,7 @@ const MainFooter = () => {
             <FunderInfo />
           </Grid>
 
-          <Grid size={{ xs: 6, md: 2, sm: 3 }}>
+          <Grid mr={{xs: 2, md: 5}} size={{ xs: 6, md: 2, sm: 3 }}>
             <QuickAccess />
           </Grid>
 
@@ -59,7 +59,7 @@ const MainFooter = () => {
         </Grid>
       </Grid>
       <Typography fontSize={14} >
-        2024 © | کلیه حقوق برای فورایکس فاندر محفوظ می باشد.
+        2025 © | کلیه حقوق برای فورایکس فاندر محفوظ می باشد.
       </Typography>
     </Grid>
   )

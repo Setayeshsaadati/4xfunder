@@ -18,7 +18,7 @@ const MainTraderx = () => {
       container
       my={15}
     >
-      <Grid size={{ xs: 12, md: 5 }}>
+      <Grid size={{ xs: 12, md: 5 }} pr={{xs : 0 , md:10}}>
         <Traderx />
       </Grid>
       <Grid size={{ xs: 12, md: 7 }} zIndex={100} mt={-5}>
