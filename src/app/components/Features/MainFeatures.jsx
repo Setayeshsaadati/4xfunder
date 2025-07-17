@@ -95,11 +95,6 @@ const MainFeatures = () => {
             py: { xs: 1, md: 0 },
             position: "relative",
             overflow: "hidden",
-            "&:hover": {
-              boxShadow: "0 0 20px rgba(229, 185, 118, 0.3)",
-              transform: "translateY(-5px)",
-              transition: "all 0.3s ease",
-            },
           }}
         >
           <PriceList />

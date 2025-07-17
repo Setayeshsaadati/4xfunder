@@ -2,20 +2,27 @@ import { Box, Typography } from "@mui/material"
 
 const Step4 = () => (
   <Box sx={{ display: "flex", justifyContent: "space-between", color: "#fff" }}>
-    <Box mt={7} width={'65%'}>
+    <Box mt={7} width={"65%"}>
       <Box display={"flex"}>
         <Typography fontSize={22} fontWeight={900} color="#00d285">
-          انتخاب آگاهانه
+          بهترین معامله‌گران 4XFunder{" "}
         </Typography>
-        <Typography fontSize={22} fontWeight={900} color="white" mr={.5}>
-          چالش با پشتیبانی حرفه ای
+        <Typography fontSize={22} fontWeight={900} color="white" mr={0.5}>
+          به برنامه پریمیوم دسترسی ویژه دارند.{" "}
         </Typography>
       </Box>
       <Typography fontSize={17} mt={3}>
-        پیش از آغاز مسیر با استفاده از حساب های تست و ارزیابی اولیه،چالش معاملاتی متناسب با سطح مهارت خود را انتخاب میکند. در این مرحله، تیم پشتیبانی ۲۴ ساعته فورایکس فاندر همراه شماست تا با راهنمایی دقیق، بهترین گزینه را برای ورود به مسیر پراپ تریدینگ انتخاب کنید.
+        بهترین معامله‌گران 4XFunder از طریق برنامه پریمیوم ما فرصت دارند تا به
+        معامله‌گران حرفه‌ای در 4XFunder یک شرکت معاملاتی چند مالکیتی که با
+        سرمایه واقعی خود فعالیت می‌کند، تبدیل شوند. 4XFunder از ترکیب
+        معامله‌گران، تحلیلگران، ریاضی‌دانان و توسعه‌دهندگانی تشکیل شده است که
+        همگی به بازارهای مالی علاقه‌مند هستند. این هدف نهایی حرفه معاملاتی است
+        که 4XFunder در نظر دارد.F{" "}
       </Typography>
     </Box>
-    <Box width={'35%'} p={5}>photo</Box>
+    <Box width={"35%"} p={5}>
+      photo
+    </Box>
   </Box>
 )
 
